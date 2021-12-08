@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{BF776B6F-2179-488D-B85B-DF25068C9DD8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/Movie.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/Startmenu.cs">
     <Files>
       <File FileName="MovieSearch/Program.cs" Line="32" Column="1" />
-      <File FileName="MovieSearch/Movie.cs" Line="1" Column="1" />
+      <File FileName="MovieSearch/Startmenu.cs" Line="7" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MovieSearch" expanded="True">
             <Node name="MovieSearch" expanded="True">
-              <Node name="Movie.cs" selected="True" />
+              <Node name="Startmenu.cs" selected="True" />
             </Node>
           </Node>
         </State>
