@@ -34,7 +34,7 @@ namespace MovieSearch
                 switch (option)
                 {
                     case 1:
-                        Console.WriteLine("movie id"); //lägg till metoden här
+                        SearchByMovieId.SearchById();// metoden
                         break;
                     case 2:
                         Console.WriteLine("movie title"); //lägg till metoden här

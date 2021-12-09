@@ -3,24 +3,19 @@ namespace MovieSearch
 {
     public class Movie
     {
-        //public Uri Homepage { get; set; } // URL länk hur ska man göra då
-        // står att det är en sträng på databas saken se skärm dump
-
+        public string Homepage { get; set; }
         public int Id { get; set; }
         public string Original_language { get; set; }
         public string Original_title { get; set; }
         public string Overview { get; set; }
-
-        //public Uri Poster_path { get; set; } // URL länk hur ska man göra då
-        // står att det är en sträng på databas saken se skärm dump
+        public string Poster_path { get; set; }
 
         public string Release_date { get; set; }
         public int Runtime { get; set; }
 
         public double Vote_average { get; set; }
-        // står att värdet är number i databasen??
 
-        public Movie(/*homepage */ int id, string original_language, string original_title, string overview,/* poster_path */ string release_date, int runtime, double vote_average)// konstruktor
+        /* public Movie(/*homepage int id, string original_language, string original_title, string overview, string poster_path, string release_date, int runtime, double vote_average)// konstruktor
         {
             //this.Homepage = homepage;
             this.Id = id;
@@ -32,5 +27,6 @@ namespace MovieSearch
             this.Runtime = runtime;
             this.Vote_average = vote_average;
         }
+        */
     }
 }
