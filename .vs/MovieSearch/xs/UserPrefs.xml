@@ -1,16 +1,20 @@
 ﻿<Properties StartupConfiguration="{BF776B6F-2179-488D-B85B-DF25068C9DD8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/.env">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/Startmenu.cs">
     <Files>
       <File FileName="MovieSearch/Program.cs" Line="32" Column="1" />
-      <File FileName="MovieSearch/ExitMovie.cs" Line="1" Column="1" />
-      <File FileName="MovieSearch/.env" Line="1" Column="9" />
+      <File FileName="MovieSearch/.env" />
+      <File FileName="MovieSearch/Startmenu.cs" Line="38" Column="52" />
+      <File FileName="MovieSearch/SearchByMovieId.cs" />
+      <File FileName="MovieSearch/Movie.cs" />
+      <File FileName="MovieSearch/ExitMovie.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
           <Node name="MovieSearch" expanded="True">
             <Node name="MovieSearch" expanded="True">
-              <Node name=".env" selected="True" />
+              <Node name="Startmenu.cs" selected="True" />
             </Node>
           </Node>
         </State>
