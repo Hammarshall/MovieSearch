@@ -12,10 +12,11 @@ namespace MovieSearch
 
         public static async Task<Title> SearchTitle()
         {
-            string pic = @"https://image.tmdb.org/t/p/w500/";
 
             DotNetEnv.Env.TraversePath().Load();
             string key = Environment.GetEnvironmentVariable("APIKEY");
+            string pic = Environment.GetEnvironmentVariable("STRINGPIC");
+
 
             Console.Write("Enter title for movie: ");
             string input = Console.ReadLine();
