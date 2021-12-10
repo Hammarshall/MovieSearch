@@ -15,9 +15,11 @@ namespace MovieSearch
             DotNetEnv.Env.TraversePath().Load();
             string key = Environment.GetEnvironmentVariable("APIKEY");
 
-            
 
-            string pic = @"https://image.tmdb.org/t/p/w500/";
+
+            //string pic = @"https://image.tmdb.org/t/p/w500/";
+
+            string pic = Environment.GetEnvironmentVariable("STRINGPIC");
 
             Console.Write("Enter ID for movie: ");
             int id = int.Parse(Console.ReadLine());
