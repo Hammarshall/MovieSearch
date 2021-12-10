@@ -17,7 +17,6 @@ namespace MovieSearch
 1. Search movie by using id: 
 2. Search movie by using title:
 3. Exit program. ");
-
                     try
                     {
                         option = int.Parse(Console.ReadLine());
@@ -34,10 +33,11 @@ namespace MovieSearch
                 switch (option)
                 {
                     case 1:
-                        SearchByMovieId.SearchById();// metoden
+                        SearchByMovieId.SearchById().Wait();// metoden
                         break;
                     case 2:
-                        Console.WriteLine("movie title"); //lägg till metoden här
+                        SearchByTitle.SearchTitle().Wait();
+                        //lägg till metoden här
                         break;
                     case 3:
                         ExitMovie.ExitProgram(); //metod för exit
