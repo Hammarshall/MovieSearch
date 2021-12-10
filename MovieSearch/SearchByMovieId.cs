@@ -55,11 +55,11 @@ namespace MovieSearch
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                WriteLine(e.Message);
 
-                Console.WriteLine("\nPress any key to return to menu");
-                Console.ReadKey();
-                Console.Clear();
+                WriteLine("\nPress any key to return to menu");
+                ReadKey();
+                Clear();
                 Startmenu.Menu();
 
                 return null;
