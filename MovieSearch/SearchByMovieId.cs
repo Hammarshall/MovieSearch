@@ -12,6 +12,10 @@ namespace MovieSearch
 
         public static async Task<Movie> SearchById()
         {
+            DotNetEnv.Env.TraversePath().Load();
+            string key = Environment.GetEnvironmentVariable("APIKEY");
+
+            
 
             string pic = @"https://image.tmdb.org/t/p/w500/";
 
@@ -20,7 +24,7 @@ namespace MovieSearch
 
             try
             {
-                string uriId = $"https://api.themoviedb.org/3/movie/{id}?api_key=7a2b47ee7ece23d9547cabff80a87234";
+                string uriId = $"https://api.themoviedb.org/3/movie/{id}?api_key={key}";
                 var response = await client.GetAsync(uriId);
 
                 response.EnsureSuccessStatusCode();
@@ -38,15 +42,29 @@ namespace MovieSearch
                 Console.WriteLine("\nRelease date: {0}", movie.Release_date);
                 Console.WriteLine("\nRuntime in minutes: {0}", movie.Runtime);
                 Console.WriteLine("\nVote average: {0}", movie.Vote_average);
+
+                Console.WriteLine("Press any key to return to menu");
+                Console.ReadKey(true);
+
+                Console.Clear();
+                Startmenu.Menu();
                 
                 return movie;
                 
+
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+
+                Console.WriteLine("Press any key to return to menu");
+                Console.ReadKey(true);
+
+                Console.Clear();
+                Startmenu.Menu();
                 return null;
             }
+            
         }
     }
 }

@@ -14,12 +14,15 @@ namespace MovieSearch
         {
             string pic = @"https://image.tmdb.org/t/p/w500/";
 
+            DotNetEnv.Env.TraversePath().Load();
+            string key = Environment.GetEnvironmentVariable("APIKEY");
+
             Console.Write("Enter title for movie: ");
             string input = Console.ReadLine();
 
-            try // gör om t if sats ist (search.Results.count >0)
+            try // eventuell kolla på det (gör om t if sats ist (search.Results.count >0))
             {
-                string uriId = $"https://api.themoviedb.org/3/search/movie?api_key=7a2b47ee7ece23d9547cabff80a87234&query={input}";
+                string uriId = $"https://api.themoviedb.org/3/search/movie?api_key={key}&query={input}";
                 var response = await client.GetAsync(uriId);
 
                 response.EnsureSuccessStatusCode();
@@ -33,12 +36,21 @@ namespace MovieSearch
                     Console.WriteLine($"{item.Original_title}");
                 }
 
+                Console.WriteLine("Press any key to return to menu");
+                Console.ReadKey(true);
+                Console.Clear();
+                Startmenu.Menu();
+
                 return title;
                 
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+                Console.WriteLine("Press any key to return to menu");
+                Console.ReadKey(true);
+                Console.Clear();
+                Startmenu.Menu();
                 return null;
             }
         }

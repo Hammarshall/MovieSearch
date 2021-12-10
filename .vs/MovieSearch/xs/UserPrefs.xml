@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{BF776B6F-2179-488D-B85B-DF25068C9DD8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/SearchByMovieId.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument=".gitignore">
     <Files>
-      <File FileName="MovieSearch/Program.cs" Line="23" Column="48" />
-      <File FileName="MovieSearch/Startmenu.cs" Line="49" Column="33" />
-      <File FileName="MovieSearch/ExitMovie.cs" Line="1" Column="1" />
-      <File FileName="MovieSearch/SearchByMovieId.cs" Line="1" Column="1" />
+      <File FileName="MovieSearch/Program.cs" Line="12" Column="39" />
+      <File FileName="MovieSearch/SearchByMovieId.cs" Line="47" Column="17" />
+      <File FileName="MovieSearch/SearchByTitle.cs" Line="36" Column="17" />
+      <File FileName="MovieSearch/.env" Line="1" Column="1" />
+      <File FileName=".gitignore" Line="15" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,9 +13,8 @@
           <Option id="ShowAllFiles" value="True" />
           <Node name="MovieSearch" expanded="True">
             <Node name=".vs" expanded="True" />
-            <Node name="MovieSearch" expanded="True">
-              <Node name="SearchByMovieId.cs" selected="True" />
-            </Node>
+            <Node name=".gitignore" selected="True" />
+            <Node name="MovieSearch" expanded="True" />
           </Node>
         </State>
       </Pad>
