@@ -32,19 +32,19 @@ namespace MovieSearch
             switch (option)
             {
                 case 1:
-                    SearchByMovieId.SearchById().Wait();// metoden
+                    SearchByMovieId.SearchById().Wait();// metoden + wait
+
                     break;
                 case 2:
-                    SearchByTitle.SearchTitle().Wait();
-                    //lägg till metoden här
+                    SearchByTitle.SearchTitle().Wait(); //metoden + wait
                     break;
                 case 3:
-                    ExitMovie.ExitProgram(); //metod för exit
+                    ExitMovie.ExitProgram(); //metoden för exit
                     break;
                 default:
                     Console.WriteLine("Invalid input, try again!");
-                    Console.WriteLine("Press any key to return to menu");
-                    Console.ReadKey(true);
+                    Console.WriteLine("\nPress any key to return to menu");
+                    Console.ReadKey();
                     Console.Clear();
                     Startmenu.Menu();
                     break;
@@ -55,5 +55,6 @@ namespace MovieSearch
         {
             Menu();
         }
+        
     }
 }

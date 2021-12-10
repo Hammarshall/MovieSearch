@@ -16,11 +16,15 @@ namespace MovieSearch
             string key = Environment.GetEnvironmentVariable("APIKEY");
             string pic = Environment.GetEnvironmentVariable("STRINGPIC");
 
+            Console.Clear();
+
             Console.Write("Enter ID for movie: ");
-            int id = int.Parse(Console.ReadLine());
+            //int id = int.Parse(Console.ReadLine());
 
             try
             {
+                int id = int.Parse(Console.ReadLine()); // om ngn skriver bokstäver så krashar ej allt
+
                 string uriId = $"https://api.themoviedb.org/3/movie/{id}?api_key={key}";
                 var response = await client.GetAsync(uriId);
 
@@ -40,9 +44,8 @@ namespace MovieSearch
                 Console.WriteLine("\nRuntime in minutes: {0}", movie.Runtime);
                 Console.WriteLine("\nVote average: {0}", movie.Vote_average);
 
-                Console.WriteLine("Press any key to return to menu");
-                Console.ReadKey(true);
-
+                Console.WriteLine("\nPress any key to return to menu");
+                Console.ReadKey();
                 Console.Clear();
                 Startmenu.Menu();
                 
@@ -54,11 +57,11 @@ namespace MovieSearch
             {
                 Console.WriteLine(e.Message);
 
-                Console.WriteLine("Press any key to return to menu");
-                Console.ReadKey(true);
-
+                Console.WriteLine("\nPress any key to return to menu");
+                Console.ReadKey();
                 Console.Clear();
                 Startmenu.Menu();
+
                 return null;
             }
             

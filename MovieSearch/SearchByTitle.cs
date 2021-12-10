@@ -17,12 +17,14 @@ namespace MovieSearch
             string key = Environment.GetEnvironmentVariable("APIKEY");
             string pic = Environment.GetEnvironmentVariable("STRINGPIC");
 
+            Console.Clear();
 
             Console.Write("Enter title for movie: ");
-            string input = Console.ReadLine();
+            //string input = Console.ReadLine();
 
             try // eventuell kolla på det (gör om t if sats ist (search.Results.count >0))
             {
+                string input = Console.ReadLine();
                 string uriId = $"https://api.themoviedb.org/3/search/movie?api_key={key}&query={input}";
                 var response = await client.GetAsync(uriId);
 
@@ -37,21 +39,23 @@ namespace MovieSearch
                     Console.WriteLine($"{item.Original_title}");
                 }
 
-                Console.WriteLine("Press any key to return to menu");
-                Console.ReadKey(true);
+                Console.WriteLine("\nPress any key to return to menu");
+                Console.ReadKey();
                 Console.Clear();
                 Startmenu.Menu();
 
                 return title;
-                
+
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-                Console.WriteLine("Press any key to return to menu");
-                Console.ReadKey(true);
+
+                Console.WriteLine("\nPress any key to return to menu");
+                Console.ReadKey();
                 Console.Clear();
                 Startmenu.Menu();
+
                 return null;
             }
         }
