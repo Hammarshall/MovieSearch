@@ -17,16 +17,15 @@ namespace MovieSearch
 
 // TO DO LIST:
 
-//söka efter film med id
-//visa titel, beskrivning,speltid,release date,URL för hemsida,medelbetyg,URL för poster,originalspråk
-//alt output om ingen film matchar id
+//söka efter film med id - Klart
+//visa titel, beskrivning,speltid,release date,URL för hemsida,medelbetyg,URL för poster,originalspråk -Klart
+//alt output om ingen film matchar id - klart
 //Klass för sökresultat (Movie klassen?) -Klart
 //huvudmeny - sök film, avsluta prog -Klart
 //readme fil
 
 //VG
 //söka film, + titel
-//till klass för sökresultat
+//till klass för sökresultat -Klart
 //huvumeny, ett till val söka efter titel -Klart
-//dölja API nyckel
-//lägga t do whiles så de nt dör
+//dölja API nyckel - klart
