@@ -1,13 +1,13 @@
 ﻿using System;
-using static System.Console; // behöver ej skriva Console. framför
+using static System.Console;//Behöver ej skriva Console. framför
 
 namespace MovieSearch
 {
-    public class Startmenu //klassen
+    public class Startmenu//Klassen
     {
-        public static void Menu() //metod
+        public static void Menu()//Metod
         {
-            int option = 0; //börja med värde 0
+            int option = 0;//Börja med värde 0
 
             bool isInvalidInput = false;
             do
@@ -25,20 +25,20 @@ namespace MovieSearch
                 catch
                 {
                     WriteLine("Invalid input, try again...");
-                    isInvalidInput = true; // true pga skrev bokstav, det ska vara siffror.
+                    isInvalidInput = true;//True = skrev bokstav, ska vara siffror.
                 }
-            } while (isInvalidInput); // kör sålänge den är false
+            } while (isInvalidInput);//Kör sålänge = false
 
             switch (option)
             {
                 case 1:
-                    SearchByMovieId.SearchById().Wait();// metoden + wait
+                    SearchByMovieId.SearchById().Wait();//Metod + wait
                     break;
                 case 2:
-                    SearchByTitle.SearchTitle().Wait(); //metoden + wait
+                    SearchByTitle.SearchTitle().Wait();//Metod + wait
                     break;
                 case 3:
-                    ExitMovie.ExitProgram(); //metoden för exit
+                    ExitMovie.ExitProgram();//Metod för exit
                     break;
                 default:
                     WriteLine("Invalid input, try again!");
@@ -50,7 +50,7 @@ namespace MovieSearch
             }
         }
 
-        public void Start() //metod för att starta metoden Menu
+        public void Start()//Metod för att starta metod Menu
         {
             Menu();
         }

@@ -5,6 +5,6 @@ namespace MovieSearch
 {
     public class Title
     {
-        public List<Movie> Results { get; set; }
+        public List<Movie> Results { get; set; }//Hämtar ifrån class Movie, gör till en lista som heter Results
     }
 }
