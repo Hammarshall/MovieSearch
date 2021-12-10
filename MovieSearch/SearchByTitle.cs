@@ -22,7 +22,7 @@ namespace MovieSearch
             Write("Enter title for movie: ");
             string input = Console.ReadLine();
 
-            try // eventuell kolla på det (gör om t if sats ist (search.Results.count >0))
+            try//EV KOLLA gör om till if sats (search.Results.count >0))
             {
                 string uriId = $"https://api.themoviedb.org/3/search/movie?api_key={key}&query={input}";
                 var response = await client.GetAsync(uriId);
@@ -35,7 +35,7 @@ namespace MovieSearch
 
                 foreach (var item in title.Results)
                 {
-                    WriteLine($"{item.Original_title}");
+                    WriteLine($"{item.Original_title}");//Osäker om de kmr ut filmer, 
                 }
 
                 WriteLine("\nPress any key to return to menu");
@@ -46,7 +46,7 @@ namespace MovieSearch
                 return title;
 
             }
-            catch (Exception e) // kommer ej ner här om ingen film matchar kolla på de
+            catch (Exception e)//Kommer ej ner här om ingen film matchar, KOLLA
             {
                 WriteLine(e.Message);
 

@@ -23,7 +23,7 @@ namespace MovieSearch
 
             try
             {
-                int id = int.Parse(Console.ReadLine()); // om ngn skriver bokstäver så krashar ej allt
+                int id = int.Parse(Console.ReadLine());//Skriver bokstäver = ej krash
 
                 string uriId = $"https://api.themoviedb.org/3/movie/{id}?api_key={key}";
                 var response = await client.GetAsync(uriId);
