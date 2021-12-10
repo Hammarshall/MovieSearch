@@ -7,10 +7,10 @@ namespace MovieSearch
     {
         public static void ExitProgram() //metod 
         {
-            Console.Write("Press any key to exit the program");
-            Console.ReadKey(true);
+            Write("Press any key to exit the program");
+            ReadKey(true);
 
-            Console.Clear();
+            Clear();
 
             Environment.Exit(0);
         }

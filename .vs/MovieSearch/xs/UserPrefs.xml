@@ -1,12 +1,7 @@
 ﻿<Properties StartupConfiguration="{BF776B6F-2179-488D-B85B-DF25068C9DD8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/Title.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/.env">
     <Files>
       <File FileName="MovieSearch/.env" Line="2" Column="43" IsPinned="True" />
-      <File FileName="MovieSearch/SearchByMovieId.cs" Line="26" Column="66" />
-      <File FileName="MovieSearch/Startmenu.cs" Line="35" Column="1" />
-      <File FileName="MovieSearch/SearchByTitle.cs" Line="25" Column="16" />
-      <File FileName="MovieSearch/Title.cs" Line="1" Column="1" />
-      <File FileName="MovieSearch/Movie.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +9,7 @@
           <Option id="ShowAllFiles" value="True" />
           <Node name="MovieSearch" expanded="True">
             <Node name="MovieSearch" expanded="True">
-              <Node name="Title.cs" selected="True" />
+              <Node name=".env" selected="True" />
             </Node>
           </Node>
         </State>
@@ -25,9 +20,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/wilmahammarshall/Projects/MovieSearch/MovieSearch/SearchByTitle.cs" relfile="MovieSearch/SearchByTitle.cs" line="22" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

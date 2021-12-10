@@ -1,5 +1,5 @@
 ﻿using System;
-using static System.Console;
+using static System.Console; // behöver ej skriva Console. framför
 
 namespace MovieSearch
 {
@@ -12,19 +12,19 @@ namespace MovieSearch
             bool isInvalidInput = false;
             do
             {
-                Console.WriteLine(@"Main menu
+                WriteLine(@"Main menu
 1. Search movie by using id: 
 2. Search movie by using title:
 3. Exit program. ");
                 try
                 {
-                    option = int.Parse(Console.ReadLine());
+                    option = int.Parse(ReadLine());
                     isInvalidInput = false;
                     break;
                 }
                 catch
                 {
-                    Console.WriteLine("Invalid input, try again...");
+                    WriteLine("Invalid input, try again...");
                     isInvalidInput = true; // true pga skrev bokstav, det ska vara siffror.
                 }
             } while (isInvalidInput); // kör sålänge den är false
@@ -33,7 +33,6 @@ namespace MovieSearch
             {
                 case 1:
                     SearchByMovieId.SearchById().Wait();// metoden + wait
-
                     break;
                 case 2:
                     SearchByTitle.SearchTitle().Wait(); //metoden + wait
@@ -42,11 +41,11 @@ namespace MovieSearch
                     ExitMovie.ExitProgram(); //metoden för exit
                     break;
                 default:
-                    Console.WriteLine("Invalid input, try again!");
-                    Console.WriteLine("\nPress any key to return to menu");
-                    Console.ReadKey();
-                    Console.Clear();
-                    Startmenu.Menu();
+                    WriteLine("Invalid input, try again!");
+                    WriteLine("\nPress any key to return to menu");
+                    ReadKey();
+                    Clear();
+                    Menu();
                     break;
             }
         }
@@ -55,6 +54,5 @@ namespace MovieSearch
         {
             Menu();
         }
-        
     }
 }

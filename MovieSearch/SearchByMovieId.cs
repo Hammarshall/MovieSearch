@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-//using static System.Console;
+using static System.Console;
 
 namespace MovieSearch
 {
@@ -16,9 +16,9 @@ namespace MovieSearch
             string key = Environment.GetEnvironmentVariable("APIKEY");
             string pic = Environment.GetEnvironmentVariable("STRINGPIC");
 
-            Console.Clear();
+            Clear();
 
-            Console.Write("Enter ID for movie: ");
+            Write("Enter ID for movie: ");
             //int id = int.Parse(Console.ReadLine());
 
             try
@@ -34,19 +34,19 @@ namespace MovieSearch
 
                 Movie movie = JsonConvert.DeserializeObject<Movie>(responseContent);
 
-                Console.WriteLine("\nHomepage: {0}", movie.Homepage);
-                Console.WriteLine("\nMovie id: {0}", movie.Id);
-                Console.WriteLine("\nLanguage: {0}", movie.Original_language);
-                Console.WriteLine("\nTitle: {0}", movie.Original_title);
-                Console.WriteLine("\nOverview: {0}", movie.Overview);
-                Console.WriteLine("\nPoster path: " + pic + movie.Poster_path);
-                Console.WriteLine("\nRelease date: {0}", movie.Release_date);
-                Console.WriteLine("\nRuntime in minutes: {0}", movie.Runtime);
-                Console.WriteLine("\nVote average: {0}", movie.Vote_average);
+                WriteLine("\nHomepage: {0}", movie.Homepage);
+                WriteLine("\nMovie id: {0}", movie.Id);
+                WriteLine("\nLanguage: {0}", movie.Original_language);
+                WriteLine("\nTitle: {0}", movie.Original_title);
+                WriteLine("\nOverview: {0}", movie.Overview);
+                WriteLine("\nPoster path: " + pic + movie.Poster_path);
+                WriteLine("\nRelease date: {0}", movie.Release_date);
+                WriteLine("\nRuntime in minutes: {0}", movie.Runtime);
+                WriteLine("\nVote average: {0}", movie.Vote_average);
 
-                Console.WriteLine("\nPress any key to return to menu");
-                Console.ReadKey();
-                Console.Clear();
+                WriteLine("\nPress any key to return to menu");
+                ReadKey();
+                Clear();
                 Startmenu.Menu();
                 
                 return movie;
