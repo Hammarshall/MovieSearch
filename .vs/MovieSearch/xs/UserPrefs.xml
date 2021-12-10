@@ -1,29 +1,19 @@
 ﻿<Properties StartupConfiguration="{BF776B6F-2179-488D-B85B-DF25068C9DD8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument=".gitignore">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/.env">
     <Files>
       <File FileName="MovieSearch/Program.cs" Line="12" Column="39" />
-<<<<<<< Updated upstream
-      <File FileName="MovieSearch/SearchByMovieId.cs" Line="47" Column="17" />
-      <File FileName="MovieSearch/SearchByTitle.cs" Line="36" Column="17" />
-      <File FileName="MovieSearch/.env" Line="1" Column="1" />
-      <File FileName=".gitignore" Line="15" Column="2" />
-=======
-      <File FileName="MovieSearch/SearchByMovieId.cs" Line="21" Column="114" />
-      <File FileName="MovieSearch/.env" Line="1" Column="40" />
-      <File FileName=".gitignore" Line="15" Column="4" />
->>>>>>> Stashed changes
+      <File FileName="MovieSearch/SearchByMovieId.cs" Line="22" Column="74" />
+      <File FileName="MovieSearch/.env" Line="2" Column="43" />
+      <File FileName="MovieSearch/SearchByTitle.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Option id="ShowAllFiles" value="True" />
           <Node name="MovieSearch" expanded="True">
-            <Node name=".vs" expanded="True" />
-<<<<<<< Updated upstream
-            <Node name=".gitignore" selected="True" />
-=======
->>>>>>> Stashed changes
-            <Node name="MovieSearch" expanded="True" />
+            <Node name="MovieSearch" expanded="True">
+              <Node name=".env" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
