@@ -15,7 +15,7 @@ namespace MovieSearch
             DotNetEnv.Env.TraversePath().Load();
             string key = Environment.GetEnvironmentVariable("APIKEY");
             string pic = Environment.GetEnvironmentVariable("STRINGPIC");
-
+            
             Clear();
 
             Write("Enter ID for movie: ");
@@ -50,8 +50,6 @@ namespace MovieSearch
                 Startmenu.Menu();
                 
                 return movie;
-                
-
             }
             catch (Exception e)
             {

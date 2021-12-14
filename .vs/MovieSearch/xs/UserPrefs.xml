@@ -1,7 +1,10 @@
 ﻿<Properties StartupConfiguration="{BF776B6F-2179-488D-B85B-DF25068C9DD8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/.env">
+  <MonoDevelop.Ide.Workbench ActiveDocument="README.md">
     <Files>
-      <File FileName="MovieSearch/.env" Line="2" Column="43" IsPinned="True" />
+      <File FileName="README.md" Line="1" Column="1" IsPinned="True" />
+      <File FileName="MovieSearch/Program.cs" Line="21" Column="16" />
+      <File FileName="MovieSearch/SearchByTitle.cs" Line="25" Column="99" />
+      <File FileName="MovieSearch/.env" Line="1" Column="8" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +12,7 @@
           <Option id="ShowAllFiles" value="True" />
           <Node name="MovieSearch" expanded="True">
             <Node name="MovieSearch" expanded="True">
-              <Node name=".env" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
