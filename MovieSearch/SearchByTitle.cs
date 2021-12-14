@@ -19,45 +19,42 @@ namespace MovieSearch
 
             Clear();
 
-            Write("Enter title for movie: ");
+            Write("Enter movie title: ");
             string input = Console.ReadLine();
 
-            try//EV KOLLA gör om till if sats (search.Results.count >0))
+            string uriId = $"https://api.themoviedb.org/3/search/movie?api_key={key}&query={input}";
+            var response = await client.GetAsync(uriId);
+
+            response.EnsureSuccessStatusCode();
+            var responseContent = await response.Content.ReadAsStringAsync();
+
+            Title title = JsonConvert.DeserializeObject<Title>(responseContent);
+
+            foreach (var item in title.Results)
             {
-                string uriId = $"https://api.themoviedb.org/3/search/movie?api_key={key}&query={input}";
-                var response = await client.GetAsync(uriId);
-
-                response.EnsureSuccessStatusCode();
-
-                var responseContent = await response.Content.ReadAsStringAsync();
-
-                Title title = JsonConvert.DeserializeObject<Title>(responseContent);
-
-                foreach (var item in title.Results)
-                {
-                    WriteLine($"{item.Original_title}");//Osäker om de kmr ut filmer, 
-                }
-
-                WriteLine("\nPress any key to return to menu");
-                ReadKey();
-                Clear();
-                Startmenu.Menu();
-
-                return title;
-
+                WriteLine("{0}:{1}", title.Results.IndexOf(item), item.Original_title);
             }
-            catch (Exception e)//Kommer ej ner här om ingen film matchar, KOLLA
-            {
-                WriteLine(e.Message);
 
-                WriteLine("\nPress any key to return to menu");
-                ReadKey();
-                Clear();
-                Startmenu.Menu();
+            WriteLine("\nSelect ID: ");
+            int id = Convert.ToInt32(Console.ReadLine());
 
-                return null;
-            }
+            WriteLine("\nHomepage: {0}", title.Results[id].Homepage);
+            WriteLine("\nMovie id: {0}", title.Results[id].Id);
+            WriteLine("\nLanguage: {0}", title.Results[id].Original_language);
+            WriteLine("\nTitle: {0}", title.Results[id].Original_title);
+            WriteLine("\nOverview: {0}", title.Results[id].Overview);
+            WriteLine("\nPoster path: {0}", pic + title.Results[id].Poster_path);
+            WriteLine("\nRelease date: {0}", title.Results[id].Release_date);
+            WriteLine("\nRuntime in minutes: {0}", title.Results[id].Runtime);
+            WriteLine("\nVote average: {0}", title.Results[id].Vote_average);
+
+            
+            WriteLine("\nPress any key to return to menu");
+            ReadKey();
+            Clear();
+            Startmenu.Menu();
+
+            return title;
         }
-
     }
 }

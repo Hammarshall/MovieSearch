@@ -16,5 +16,7 @@ namespace MovieSearch
 }
 // TO DO LIST:
 //readme fil
-//söka på titel, issues där.
+//söka på titel, issues få med home page.
+// try catcha allt ev else if satser. om inget matchar etc
+// lägg t clear
 
