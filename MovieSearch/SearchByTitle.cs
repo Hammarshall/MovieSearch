@@ -30,22 +30,10 @@ namespace MovieSearch
 
                 Title title = JsonConvert.DeserializeObject<Title>(responseContent);
 
-                if (title.Results.Count < 0)
+                foreach (var item in title.Results)
                 {
-                    WriteLine("no movie found");
-                    WriteLine("\nPress any key to return to menu");
-                    ReadKey(true);
-                    Clear();
-                    Startmenu.Menu();
-                    foreach (var item in title.Results)
-                    {
-                        WriteLine("{0}:{1}", title.Results.IndexOf(item), item.Original_title);
-
-
-                    }
-
+                    WriteLine("{0}:{1}", title.Results.IndexOf(item), item.Original_title);
                 }
-                
 
                 WriteLine("\nSelect index: ");
                 int id = Convert.ToInt32(Console.ReadLine());
@@ -68,7 +56,7 @@ namespace MovieSearch
 
                 return title;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 WriteLine(e.Message);
                 WriteLine("\nPress any key to return to menu");
@@ -78,7 +66,6 @@ namespace MovieSearch
 
                 return null;
             }
-            
         }
     }
 }

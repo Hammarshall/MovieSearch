@@ -12,7 +12,6 @@ namespace MovieSearch
             Clear();
             Environment.Exit(0);
         }
-
     }
 }
 
