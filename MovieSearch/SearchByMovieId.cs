@@ -15,8 +15,6 @@ namespace MovieSearch
             DotNetEnv.Env.TraversePath().Load();
             string key = Environment.GetEnvironmentVariable("APIKEY");
             string pic = Environment.GetEnvironmentVariable("STRINGPIC");
-            
-            Clear();
 
             Write("Enter ID for movie: ");
             //int id = int.Parse(Console.ReadLine());
@@ -45,7 +43,7 @@ namespace MovieSearch
                 WriteLine("\nVote average: {0}", movie.Vote_average);
 
                 WriteLine("\nPress any key to return to menu");
-                ReadKey();
+                ReadKey(true);
                 Clear();
                 Startmenu.Menu();
                 
@@ -56,7 +54,7 @@ namespace MovieSearch
                 WriteLine(e.Message);
 
                 WriteLine("\nPress any key to return to menu");
-                ReadKey();
+                ReadKey(true);
                 Clear();
                 Startmenu.Menu();
 
