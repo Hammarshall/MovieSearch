@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using static System.Console;
@@ -14,4 +14,3 @@ namespace MovieSearch
         }
     }
 }
-// göra en metod för print i movie classen och bara skicka med id.

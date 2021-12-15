@@ -59,6 +59,7 @@ namespace MovieSearch
             catch (Exception e)
             {
                 WriteLine(e.Message);
+
                 WriteLine("\nPress any key to return to menu");
                 ReadKey(true);
                 Clear();
