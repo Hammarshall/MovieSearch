@@ -32,7 +32,7 @@ namespace MovieSearch
 
                 foreach (var item in title.Results)
                 {
-                    WriteLine("{0}:{1}", title.Results.IndexOf(item), item.Original_title);
+                    WriteLine("{0}: {1}", title.Results.IndexOf(item), item.Original_title);
                 }
 
                 WriteLine("\nSelect index: ");
@@ -59,6 +59,7 @@ namespace MovieSearch
             catch (Exception e)
             {
                 WriteLine(e.Message);
+
                 WriteLine("\nPress any key to return to menu");
                 ReadKey(true);
                 Clear();

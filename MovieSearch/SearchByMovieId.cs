@@ -37,7 +37,7 @@ namespace MovieSearch
                 WriteLine("\nLanguage: {0}", movie.Original_language);
                 WriteLine("\nTitle: {0}", movie.Original_title);
                 WriteLine("\nOverview: {0}", movie.Overview);
-                WriteLine("\nPoster path: " + pic + movie.Poster_path);
+                WriteLine("\nPoster path: {0}" + pic + movie.Poster_path);
                 WriteLine("\nRelease date: {0}", movie.Release_date);
                 WriteLine("\nRuntime in minutes: {0}", movie.Runtime);
                 WriteLine("\nVote average: {0}", movie.Vote_average);
