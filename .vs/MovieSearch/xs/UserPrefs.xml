@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{BF776B6F-2179-488D-B85B-DF25068C9DD8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/SearchByTitle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/SearchByMovieId.cs">
     <Files>
-      <File FileName="MovieSearch/Movie.cs" Line="1" Column="1" />
-      <File FileName="MovieSearch/Program.cs" Line="1" Column="1" />
-      <File FileName="MovieSearch/SearchByTitle.cs" Line="1" Column="1" />
+      <File FileName="MovieSearch/SearchByTitle.cs" Line="16" Column="49" />
+      <File FileName="MovieSearch/SearchByMovieId.cs" Line="40" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +10,7 @@
           <Option id="ShowAllFiles" value="True" />
           <Node name="MovieSearch" expanded="True">
             <Node name="MovieSearch" expanded="True">
-              <Node name="SearchByTitle.cs" selected="True" />
+              <Node name="SearchByMovieId.cs" selected="True" />
             </Node>
           </Node>
         </State>
