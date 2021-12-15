@@ -16,6 +16,5 @@ namespace MovieSearch
 }
 // TO DO LIST
 //söka på titel, issues få med home page.
-// try catcha allt ev else if satser. om inget matchar etc
-// lägg t clear
+// får ibland ej med alla parametrar
 
