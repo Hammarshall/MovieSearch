@@ -1,4 +1,5 @@
-﻿<Properties StartupConfiguration="{BF776B6F-2179-488D-B85B-DF25068C9DD8}|Default">
+<Properties StartupConfiguration="{BF776B6F-2179-488D-B85B-DF25068C9DD8}|Default">
+  <MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/Title.cs">
     <Files>
       <File FileName="MovieSearch/SearchByTitle.cs" Line="16" Column="49" />

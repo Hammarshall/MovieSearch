@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using static System.Console;
@@ -14,7 +14,3 @@ namespace MovieSearch
         }
     }
 }
-// TO DO LIST
-//söka på titel, issues få med home page.
-// får ibland ej med alla parametrar
-
