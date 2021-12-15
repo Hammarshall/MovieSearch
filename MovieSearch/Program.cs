@@ -14,3 +14,4 @@ namespace MovieSearch
         }
     }
 }
+// göra en metod för print i movie classen och bara skicka med id.
