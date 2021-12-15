@@ -38,14 +38,14 @@ namespace MovieSearch
                 WriteLine("\nSelect index: ");
                 int id = Convert.ToInt32(Console.ReadLine());
 
-                WriteLine("\nHomepage: {0}", title.Results[id].Homepage);
+                //WriteLine("\nHomepage: {0}", title.Results[id].Homepage);
                 WriteLine("\nMovie id: {0}", title.Results[id].Id);
                 WriteLine("\nLanguage: {0}", title.Results[id].Original_language);
                 WriteLine("\nTitle: {0}", title.Results[id].Original_title);
                 WriteLine("\nOverview: {0}", title.Results[id].Overview);
                 WriteLine("\nPoster path: {0}", pic + title.Results[id].Poster_path);
                 WriteLine("\nRelease date: {0}", title.Results[id].Release_date);
-                WriteLine("\nRuntime in minutes: {0}", title.Results[id].Runtime);
+                //WriteLine("\nRuntime in minutes: {0}", title.Results[id].Runtime);
                 WriteLine("\nVote average: {0}", title.Results[id].Vote_average);
 
 
